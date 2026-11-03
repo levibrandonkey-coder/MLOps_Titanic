@@ -1,5 +1,6 @@
 # MLOps_Titanic
 Develop a predictive model that accurately classifies whether passengers survived the Titanic disaster based on available demographic and travel-related features. Identify the key factors influencing passenger survival, build a robust classification model, evaluate its accuracy, and demo deployment and monitoring using an end-to-end MLOps pipeline.
+
 # **Unit End Project**
 ## **Predictive Modeling and Deployment**
 ### **Problem Statement**
@@ -21,7 +22,6 @@ Use Python and associated tools to develop an MLOps lifecycle project that inclu
 *  Documentation of the entire workflow and best practices
 
 ### **Data Description**
-
 The Titanic dataset contains demographic and passenger information for 891 individuals aboard the Titanic. Each record represents a passenger and includes the following attributes:
 
 *  **PassengerId:** Unique identifier for each passenger.
@@ -36,3 +36,9 @@ The Titanic dataset contains demographic and passenger information for 891 indiv
 *  **Fare:** Ticket fare paid.
 *  **Cabin:** Cabin number (many entries are missing).
 *  **Embarked:** Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
+
+1. Prerequisite: Git Setup
+Ensure Git is installed (brew install git on macOS, sudo apt install git on Linux, or from git-scm.com).
+
+2. Clone & Navigate
+Clone the repo and enter the project directory:
