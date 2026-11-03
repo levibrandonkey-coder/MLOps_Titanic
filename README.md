@@ -44,5 +44,5 @@ Ensure Git is installed (brew install git on macOS, sudo apt install git on Linu
 2. Clone & Navigate
 Clone the repo and enter the project directory:
 
-git clone https://github.com/vivekfullstack/Fullstack.git
+```git clone https://github.com/vivekfullstack/Fullstack.git
 cd Fullstack
