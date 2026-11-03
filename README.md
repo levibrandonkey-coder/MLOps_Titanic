@@ -44,5 +44,6 @@ Ensure Git is installed (brew install git on macOS, sudo apt install git on Linu
 2. Clone & Navigate
 Clone the repo and enter the project directory:
 
-```git clone https://github.com/vivekfullstack/Fullstack.git
+```python
+git clone https://github.com/levibrandonkey-coder/MLOps_Titanic.git
 cd Fullstack
