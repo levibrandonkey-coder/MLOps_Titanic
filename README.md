@@ -37,8 +37,12 @@ The Titanic dataset contains demographic and passenger information for 891 indiv
 *  **Cabin:** Cabin number (many entries are missing).
 *  **Embarked:** Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
 
+## **Quickstart Guide**
 1. Prerequisite: Git Setup
 Ensure Git is installed (brew install git on macOS, sudo apt install git on Linux, or from git-scm.com).
 
 2. Clone & Navigate
 Clone the repo and enter the project directory:
+
+git clone https://github.com/vivekfullstack/Fullstack.git
+cd Fullstack
