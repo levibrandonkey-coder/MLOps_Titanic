@@ -7,10 +7,17 @@ DATA_DIR = Path('data')
 raw_file = DATA_DIR / 'titanic.csv'
 processed_file = DATA_DIR / 'processed_titanic.csv'
 
+# 1. Load Raw Data
+
+print(f"Reading raw data from: {raw_file}...")
+df = pd.read_csv(raw_file)
+print(f"Loaded raw dataset: {df.shape[0]} rows, {df.shape[1]} columns")
+print()
+
 # 2. Basic Preprocessing & Feature Engineering
 print("Extracting 'Title' from 'Name'...")
 df['Title'] = df['Name'].str.extract(r' ([A-Za-z]+)\.', expand=False)
-# Replace rare titles
+
 rare_titles = ['Lady', 'Countess','Capt', 'Col', 'Don', 'Dr', 'Major', 'Rev', 'Sir', 'Jonkheer', 'Dona']
 df['Title'] = df['Title'].replace(rare_titles, 'Rare')
 df['Title'] = df['Title'].replace({'Mlle': 'Miss', 'Ms': 'Miss', 'Mme': 'Mrs'})
@@ -32,8 +39,10 @@ df.drop(columns=['Cabin', 'Name', 'Ticket', 'PassengerId'], inplace=True, errors
 
 # 4. Encode Categorical Variables
 print("Encoding categorical variables...")
+
 # Fill missing Embarked values with the mode before encoding
 df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
+
 # One-hot encode categorical features
 df = pd.get_dummies(df, columns=['Sex', 'Embarked', 'age_group', 'Title'], drop_first=True)
 
