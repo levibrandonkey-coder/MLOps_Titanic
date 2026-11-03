@@ -39,7 +39,7 @@ The Titanic dataset contains demographic and passenger information for 891 indiv
 
 ## **Quickstart Guide**
 1. Prerequisite: Git Setup
-Ensure Git is installed (`brew install git` on macOS, `sudo apt install git` on Linux, or from [git-scm.com](git-scm.com)).
+Ensure Git is installed (`brew install git` on macOS, `sudo apt install git` on Linux, or from [git-scm.com](https://git-scm.com)).
 
 2. Clone & Navigate
 Clone the repo and enter the project directory:
