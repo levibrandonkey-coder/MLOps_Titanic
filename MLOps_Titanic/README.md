@@ -58,7 +58,7 @@ MLOps_Titanic/
 ### 1. Create and Activate Virtual Environment
 
 ```bash
-python -m venv venv
+python -m venv .venv
 source venv/bin/activate
 ```
 
