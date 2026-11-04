@@ -12,6 +12,7 @@ mlflow.set_tracking_uri("sqlite:///mlflow.db")
 mlflow.set_experiment("titanic_experiment")
 
 # Load the processed Titanic dataset
+DATA_DIR = Path('data')
 df = pd.read_csv(DATA_DIR / 'processed_titanic.csv')
 
 # Separate features and target
