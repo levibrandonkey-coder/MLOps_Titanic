@@ -8,7 +8,6 @@ from evidently.presets import DataDriftPreset
 # Set up directory paths
 DATA_DIR = Path('data')
 REPORTS_DIR = Path('reports')
-REPORTS_DIR.mkdir(exist_ok=True)
 
 # 1. Load dataset (processed_titanic.csv is in the current working directory)
 df = pd.read_csv("processed_titanic.csv")
