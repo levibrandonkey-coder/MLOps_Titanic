@@ -4,10 +4,10 @@
     "SibSp": 1,
     "Parch": 0,
     "Fare": 7.25,
-    "FamilySize": 2,       # SibSp + Parch + 1
-    "Sex_male": 1,         # 1 = male, 0 = female
+    "FamilySize": 2,
+    "Sex_male": 1,
     "Embarked_Q": 0,
-    "Embarked_S": 1,       # Embarked from Southampton
+    "Embarked_S": 1,
     "age_group_adult": 1,
     "age_group_senior": 0,
     "Title_Miss": 0,
