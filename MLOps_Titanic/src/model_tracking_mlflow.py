@@ -59,7 +59,7 @@ for name, model in models.items():
 
         mlflow.sklearn.log_model(
             sk_model=model,
-            artifact_path="model",
+            name="model",
             skops_trusted_types=SKOPS_TRUSTED_TYPES
         )
 
