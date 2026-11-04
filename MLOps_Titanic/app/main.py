@@ -3,8 +3,11 @@ import pandas as pd
 from fastapi import FastAPI
 import uvicorn
 
+# Import helpers from utils
+from utils import select_model, engineer_features, align_features
+
 # Configure MLflow to point to your SQLite database
-mlflow.set_tracking_uri("sqlite:////content/mlflow.db")
+mlflow.set_tracking_uri("sqlite:///mlflow.db")
 
 # Fallback loading logic if interactive select_model is not preferred at auto-startup
 try:
