@@ -35,7 +35,7 @@ cd MLOps_Titanic
 
 ```text
 MLOps_Titanic/
-└── mlops_demo/
+└── MLOps_Titanic/
     ├── app/                    # API / Web server for inference
     ├── data/                   # Raw and processed datasets
     ├── mlruns/                 # MLflow artifact storage directory
