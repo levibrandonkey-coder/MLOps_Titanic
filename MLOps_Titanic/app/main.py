@@ -6,8 +6,9 @@ import uvicorn
 # Configure MLflow to point to your SQLite database
 mlflow.set_tracking_uri("sqlite:////content/mlflow.db")
 
-# Get the best run from 'titanic_experiment' based on accuracy
+# Fallback loading logic if interactive select_model is not preferred at auto-startup
 try:
+    # We can use the utility logic to align our model loading
     experiment = mlflow.get_experiment_by_name("titanic_experiment")
     runs = mlflow.search_runs(experiment_ids=[experiment.experiment_id], order_by=["metrics.accuracy DESC"])
     best_run_id = runs.iloc[0]["run_id"]
@@ -16,7 +17,7 @@ try:
     model = mlflow.sklearn.load_model(model_uri)
     print(f"Loaded best model '{best_model_name}' from run: {best_run_id}")
 except Exception as e:
-    print(f"Error loading MLflow model: {e}. Fallback: Please ensure the training step has run.")
+    print(f"Error loading MLflow model: {e}. Ensure training step has run.")
     best_run_id = "unknown"
     best_model_name = "unknown"
     model = None
@@ -36,8 +37,12 @@ def predict(data: dict):
     if model is None:
         return {"error": "Model is not loaded. Run the training cell first."}
     
-    # Ensure keys match expected casing and structure
+    # Load input dictionary into a pandas DataFrame
     df = pd.DataFrame([data])
+    
+    # Use the utilities logic for dynamic feature engineering and schema alignment
+    df = engineer_features(df, model)
+    df = align_features(df, model)
     
     # Generate prediction (0 = No, 1 = Yes)
     prediction = int(model.predict(df)[0])
