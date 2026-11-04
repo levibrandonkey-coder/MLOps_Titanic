@@ -46,4 +46,5 @@ Clone the repo and enter the project directory:
 
 ```python
 git clone https://github.com/levibrandonkey-coder/MLOps_Titanic.git
-cd Fullstack
+cd MLOps_Titanic
+```
