@@ -34,7 +34,7 @@ cd MLOps_Titanic
 ## 📁 Project Structure
 
 ```text
-Fullstack/
+MLOps_Titanic/
 └── mlops_demo/
     ├── app/                    # API / Web server for inference
     ├── data/                   # Raw and processed datasets
