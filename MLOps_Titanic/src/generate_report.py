@@ -1,5 +1,3 @@
-!pip install evidently -q
-
 import webbrowser
 from pathlib import Path
 import pandas as pd
@@ -8,6 +6,7 @@ from evidently import Report
 from evidently.presets import DataDriftPreset
 
 # Set up directory paths
+DATA_DIR = Path('data')
 REPORTS_DIR = Path('reports')
 REPORTS_DIR.mkdir(exist_ok=True)
 
@@ -48,3 +47,4 @@ output_path = REPORTS_DIR / "titanic_monitoring_report.html"
 snapshot.save_html(str(output_path))
 
 print(f"Report generated successfully with hardcoded drift at {output_path.resolve()}")
+webbrowser.open(output_path.resolve().as_uri())
