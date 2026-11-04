@@ -1,17 +1,17 @@
 {
-    'Pclass': 3,
-    'Age': 22.0,
-    'SibSp': 1,
-    'Parch': 0,
-    'Fare': 7.25,
-    'FamilySize': 2,       # SibSp + Parch + 1
-    'Sex_male': 1,         # 1 = male, 0 = female
-    'Embarked_Q': 0,
-    'Embarked_S': 1,       # Embarked from Southampton
-    'age_group_adult': 1,
-    'age_group_senior': 0,
-    'Title_Miss': 0,
-    'Title_Mr': 1,
-    'Title_Mrs': 0,
-    'Title_Rare': 0
+    "Pclass": 3,
+    "Age": 22.0,
+    "SibSp": 1,
+    "Parch": 0,
+    "Fare": 7.25,
+    "FamilySize": 2,       # SibSp + Parch + 1
+    "Sex_male": 1,         # 1 = male, 0 = female
+    "Embarked_Q": 0,
+    "Embarked_S": 1,       # Embarked from Southampton
+    "age_group_adult": 1,
+    "age_group_senior": 0,
+    "Title_Miss": 0,
+    "Title_Mr": 1,
+    "Title_Mrs": 0,
+    "Title_Rare": 0
 }
