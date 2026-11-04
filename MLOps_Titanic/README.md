@@ -1,6 +1,6 @@
 # Titanic Survivor MLOps
 
-An end-to-end Machine Learning pipeline for training, tracking, and serving wine quality classification models using Python, MLflow, and FastAPI.
+A predictive model that accurately classifies whether passengers survived the Titanic disaster based on available demographic and travel-related features.
 
 ---
 
